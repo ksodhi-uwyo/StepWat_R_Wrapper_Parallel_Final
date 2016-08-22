@@ -1,0 +1,28 @@
+Cloning the repository:
+git clone https://github.com/ksodhi-uwyo/StepWat_R_Wrapper_Parallel_Final.git
+
+Un-tar the tar file:
+tar -xvzf <nameoftarfile>.tar
+example: tar -xzvf StepWat_R_Wrapper_Parallel_Final.tar
+
+Copying the databse:
+cp <location_of_database> <location_where_to_copy>
+example: cp /project/sagebrush-steppehab/ksodhi/dbWeather_Database.sqlite /home/ksodhi/dbWeather_Database.sqlite
+
+Make script executable:
+A script can be made executable using the command : chmod +x <scriptname>
+
+Following are the commands to run the respective scripts:
+- call_sbatch.sh : ./call_sbatch.sh <number_of_sites> ; example : ./call_sbatch.sh 10
+
+- call_sbatch_database.sh : ./call_sbatch_databse.sh <number_of_sites> ; example : ./call_sbatch_database.sh 10
+
+- copydata.sh : ./copydata.sh
+
+- generate_stepwat_sites.sh : ./generate_stepwat_sites.sh <wrapper_folder_to_copy> <number_of_sites> <number_of_scenario>
+			    example: ./generate_stepwat_sites.sh StepWat_R_Wrapper_Parallel 1 17
+
+- local_databse.sh : ./local_database.sh <number_of_sites>; example: ./local_database.sh 10
+
+- local_run.sh : ./local_run.sh <number_of_sites> ; example : ./local_run.sh 10
+
